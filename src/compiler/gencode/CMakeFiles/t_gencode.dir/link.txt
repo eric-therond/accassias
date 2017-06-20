@@ -1,0 +1,2 @@
+/usr/bin/ar cr libt_gencode.a  CMakeFiles/t_gencode.dir/t_gencode.cpp.o CMakeFiles/t_gencode.dir/t_threeaddress.cpp.o CMakeFiles/t_gencode.dir/t_threeaddresscode.cpp.o
+/usr/bin/ranlib libt_gencode.a

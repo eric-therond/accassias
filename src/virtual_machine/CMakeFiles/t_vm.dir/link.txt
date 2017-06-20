@@ -1,0 +1,2 @@
+/usr/bin/ar cr libt_vm.a  CMakeFiles/t_vm.dir/t_vm.cpp.o
+/usr/bin/ranlib libt_vm.a

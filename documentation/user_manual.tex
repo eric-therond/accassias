@@ -1,0 +1,90 @@
+\documentclass[a4paper]{report}
+
+\usepackage[latin1]{inputenc} % accents
+\usepackage[T1]{fontenc}      % caractères français
+\usepackage[francais]{babel}  % langue
+\usepackage{graphicx}         % images
+\usepackage{verbatim}         % texte préformaté
+\usepackage{listings}
+\usepackage[]{algorithm2e}
+\usepackage[margin=0.8in]{geometry}
+\usepackage[table]{xcolor}
+
+\addto\captionsfrancais{% Replace "english" with the language you use
+  \renewcommand{\contentsname}%
+    {Sommaire}%
+}
+
+\begin{document}
+
+\begin{titlepage}
+\fontfamily{phv}\selectfont
+\vspace*{\stretch{1}}
+\begin{flushright}\LARGE
+Accassias
+\end{flushright}
+\hrule
+\begin{flushleft}\huge\bfseries
+User Manual
+\end
+{flushleft}
+\vspace*{\stretch{2}}
+\begin{center}
+Eric Therond
+\end{center}
+\end{titlepage}
+
+\tableofcontents
+
+\chapter{Introduction}
+
+  \section{Présentation d'Accassias}
+
+    \subsection{Description générale}
+\textit{Accassias} est un outil pour l'aide à l'analyse statique de codes sources. Il est écrit dans un but d'apprentissage, à la fois l'étude de la programmation en \textit{C++} et la recherche automatisée de défauts logiciel.
+
+  \newpage
+
+\chapter{Utilisation}
+
+On execute ici le programme example1.aca écrit en langage \textit{Accassias}
+\newline
+\includegraphics[scale=1]{cat_example1.png}
+\vspace{5mm}
+\newline
+\includegraphics[scale=1]{load_accassias.png}
+
+  \section{Calcul de l'arbre de syntaxe abstraite}
+On lance l'écriture de l'ast au format dot à l'aide de l'appel à la méthode \begin{verbatim}$ast->dot("dotexample1.dot");\end{verbatim}
+\includegraphics[scale=1]{ast_cmd_example1.png}
+\vspace{5mm}
+\newline
+\includegraphics[scale=0.7]{ast_example1.png}
+
+  \section{Calcul du three address code}
+On affiche le three address code à l'aide de l'appel à la méthode \begin{verbatim}$stdlib->system("show_tac");\end{verbatim}
+\includegraphics[scale=1]{tac_example1.png}
+
+  \section{Calcul du control flow graph}
+On calcul le control flow graph à l'aide de l'appel à la méthode \begin{verbatim}$cfg->compute();\end{verbatim}
+\includegraphics[scale=1]{cfg_compute_cmd_example1.png}
+\vspace{5mm}
+\newline
+On écrit le control flow graph au format dot à l'aide de l'appel à la méthode \begin{verbatim}$cfg->dot("cfgexample1.dot");\end{verbatim}
+\includegraphics[scale=1]{cfg_cdot_cmd_example1.png}
+\vspace{5mm}
+\newline
+\includegraphics[scale=1]{cfg_example1.png}
+
+  \section{Calcul du code machine}
+On affiche le code machine à l'aide de l'appel à la méthode \begin{verbatim}$stdlib->system("show_code");\end{verbatim}
+\includegraphics[scale=1]{code_example1.png}
+
+  \section{Affichage de l'état de la machine virtuelle}
+On affiche l'état de la machine virtuelle à l'aide de l'appel à la méthode \begin{verbatim}$stdlib->system("show_statevm");\end{verbatim}
+\includegraphics[scale=1]{statevm_example1.png}
+
+% \listoffigures
+% \listoftables
+
+\end{document}

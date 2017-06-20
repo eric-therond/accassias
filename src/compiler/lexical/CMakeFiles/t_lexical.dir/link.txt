@@ -1,0 +1,2 @@
+/usr/bin/ar cr libt_lexical.a  CMakeFiles/t_lexical.dir/t_lexical.cpp.o
+/usr/bin/ranlib libt_lexical.a

@@ -1,0 +1,2 @@
+/usr/bin/ar cr libt_syntax.a  CMakeFiles/t_syntax.dir/t_class.cpp.o CMakeFiles/t_syntax.dir/t_function.cpp.o CMakeFiles/t_syntax.dir/t_variable.cpp.o CMakeFiles/t_syntax.dir/t_syntax.cpp.o CMakeFiles/t_syntax.dir/t_symbol.cpp.o CMakeFiles/t_syntax.dir/t_identifier.cpp.o CMakeFiles/t_syntax.dir/t_identifiervertex.cpp.o
+/usr/bin/ranlib libt_syntax.a

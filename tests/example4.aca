@@ -1,0 +1,11 @@
+class toto
+{
+  function test()
+  {
+    declr $a;
+    declr $b;
+
+    $a = 10;
+    $b = 90;
+  }
+}

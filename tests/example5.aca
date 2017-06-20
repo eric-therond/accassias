@@ -1,0 +1,21 @@
+declr $x;
+declr $y;
+declr $a;
+declr $b;
+declr $t;
+
+$a = 10;
+$b = 100;
+$y = 1000;
+
+
+$t = $a + $b;
+if($y > $t)
+{
+  $a = $a + 1;
+  $x = $a + $b;
+}
+else
+{
+  $y = 10000;
+}

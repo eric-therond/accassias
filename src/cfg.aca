@@ -1,0 +1,16 @@
+class cfg
+{
+  function compute()
+  {
+    t_cfg_compute
+  }
+
+  function dot(declr $file)
+  {
+    t_cfg_dot
+  }
+}
+
+declr $cfg;
+$cfg = new cfg;
+

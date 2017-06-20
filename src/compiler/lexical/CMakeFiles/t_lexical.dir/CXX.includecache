@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/eric/perso/accassias/src/compiler/lexical/t_lexical.cpp
+t_lexical.h
+/home/eric/perso/accassias/src/compiler/lexical/t_lexical.h
+iostream
+-
+fstream
+-
+sys/time.h
+-
+termios.h
+-
+stdio.h
+-
+ncurses.h
+-
+unistd.h
+-
+
+/home/eric/perso/accassias/src/compiler/lexical/t_lexical.h
+t_token.h
+/home/eric/perso/accassias/src/compiler/lexical/t_token.h
+string
+-
+fstream
+-
+vector
+-
+
+/home/eric/perso/accassias/src/compiler/lexical/t_token.h
+

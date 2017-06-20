@@ -1,0 +1,2 @@
+/usr/bin/ar cr libt_multi_precision.a  CMakeFiles/t_multi_precision.dir/t_mpgeneric.cpp.o CMakeFiles/t_multi_precision.dir/t_string.cpp.o CMakeFiles/t_multi_precision.dir/t_mpinteger.cpp.o CMakeFiles/t_multi_precision.dir/t_mppolynomial.cpp.o CMakeFiles/t_multi_precision.dir/t_mparray.cpp.o
+/usr/bin/ranlib libt_multi_precision.a

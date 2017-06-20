@@ -1,0 +1,233 @@
+\documentclass[a4paper]{report}
+
+\usepackage[latin1]{inputenc} % accents
+\usepackage[T1]{fontenc}      % caractères français
+\usepackage[francais]{babel}  % langue
+\usepackage{graphicx}         % images
+\usepackage{verbatim}         % texte préformaté
+\usepackage{listings}
+\usepackage[]{algorithm2e}
+\usepackage[margin=0.8in]{geometry}
+\usepackage[table]{xcolor}
+
+\addto\captionsfrancais{% Replace "english" with the language you use
+  \renewcommand{\contentsname}%
+    {Sommaire}%
+}
+
+\begin{document}
+
+\begin{titlepage}
+\fontfamily{phv}\selectfont
+\vspace*{\stretch{1}}
+\begin{flushright}\LARGE
+Accassias
+\end{flushright}
+\hrule
+\begin{flushleft}\huge\bfseries
+Developer Manual
+\end
+{flushleft}
+\vspace*{\stretch{2}}
+\begin{center}
+Eric Therond
+\end{center}
+\end{titlepage}
+
+\tableofcontents
+
+\chapter{Introduction}
+
+  \section{Présentation d'Accassias}
+
+    \subsection{Description générale}
+\textit{Accassias} est un outil pour l'aide à l'analyse statique de codes sources. Il est écrit dans un but d'apprentissage, à la fois pour l'étude de la programmation en \textit{C++} et la recherche automatisée de défauts logiciel.
+
+  \newpage
+
+\chapter{Implémentation}
+
+  \section{Analyse lexicale}
+
+\begin{tabular}{ | l | l | }
+\hline
+\rowcolor{gray}Symbole lexical & Chaine \\
+\hline
+T\_READPOL & t\_readpol \\
+\hline
+T\_PRINT & t\_print \\
+\hline
+T\_CLASS & class \\
+\hline
+T\_NEW & new \\
+\hline
+T\_FUNCTION & function \\
+\hline
+T\_IDENTIFIER & ([a-z]\_)* \\
+\hline
+T\_STRING & ".*" \\
+\hline
+T\_DECLR & declr \\
+\hline
+T\_VARIABLE & \$ \\
+\hline
+T\_NUMBER & [0-9]* \\
+\hline
+T\_COMMA & , \\
+\hline
+T\_DOTCOMMA & ; \\
+\hline
+T\_RIGHTBRACKET & ] \\
+\hline
+T\_LEFTBRACKET & [ \\
+\hline
+T\_RIGHTBRACE & \} \\
+\hline
+T\_LEFTBRACE & \{ \\
+\hline
+T\_DOUBLEQUOTE & " \\
+\hline
+T\_RIGHTPARENTHESIS & ) \\
+\hline
+T\_LEFTPARENTHESIS & ( \\
+\hline
+T\_EQUAL & = \\
+\hline
+T\_ADD & + \\
+\hline
+T\_SUB & - \\
+\hline
+T\_DIV &  \\
+\hline
+T\_MUL & * \\
+\hline
+T\_UNDEF &   \\
+\hline
+T\_END &   \\
+\hline
+T\_ERROR &   \\
+\hline
+T\_RETURN & return \\
+\hline
+T\_UP\_ARROW &   \\
+\hline
+T\_DOWN\_ARROW &   \\
+\hline
+T\_TAB & 	 \\
+\hline
+T\_IF & if \\
+\hline
+T\_ELSEIF & elseif \\
+\hline
+T\_ELSE & else \\
+\hline
+T\_FOR & for \\
+\hline
+T\_DO & do \\
+\hline
+T\_WHILE & while \\
+\hline
+T\_THIS & this \\
+\hline
+T\_SUP & > \\
+\hline
+T\_INF & < \\
+\hline
+T\_SUPEQUAL & >= \\
+\hline
+T\_INFEQUAL & <= \\
+\hline
+T\_SYSTEM & t\_system \\
+\hline
+T\_FPUTS & t\_fputs \\
+\hline
+T\_CFG\_DOT & t\_cfg\_dot \\
+\hline
+T\_CFG\_COMPUTE & t\_cfg\_compute \\
+\hline
+T\_AST\_DOT & t\_ast\_dot \\
+\hline
+T\_INCLUDE & t\_include \\
+\hline
+\end{tabular}
+
+  \section{Analyse syntaxique}
+
+\begin{verbatim}
+aca ::= instruction*;
+
+instruction ::= for_instruction | if_instruction | system_instruction 
+| readpol_instruction | include_instruction | print_instruction 
+| fputs_instruction | cfg_dot_instruction | cfg_compute_instruction
+| ast_dot_instruction | return_instruction | call_instruction
+| variable | variable_declaration | function_declaration | class_declaration
+
+for_instruction ::= T_FOR T_LEFTPARENTHESIS variable T_DOTCOMMA expression T_DOTCOMMA 
+variable T_RIGHTPARENTHESIS bloc_instructions
+
+if_instruction ::= T_IF T_LEFTPARENTHESIS expression T_RIGHTPARENTHESIS bloc_instructions 
+(T_ELSEIF T_LEFTPARENTHESIS expression T_RIGHTPARENTHESIS bloc_instructions)* 
+(T_ELSE bloc_instructions)?
+
+system_instruction ::= T_SYSTEM
+
+readpol_instruction ::= T_READPOL
+
+include_instruction ::= T_INCLUDE
+
+print_instruction ::= T_PRINT
+
+fputs_instruction ::= T_FPUTS
+
+cfg_dot_instruction ::= T_CFG_DOT
+
+cfg_compute_instruction ::= T_CFG_COMPUTE
+
+ast_dot_instruction ::= T_AST_DOT
+
+return_instruction ::= T_RETURN expression T_DOTCOMMA
+
+call_instruction ::= T_IDENTIFIER T_LEFTPARENTHESIS 
+((expression T_COMMA)* (expression T_COMMA))? T_RIGHTPARENTHESIS T_DOTCOMMA
+
+variable ::= T_VARIABLE (T_IDENTIFIER | T_THIS) (T_SUB T_SUP)? 
+((T_LEFTBRACKET expression T_RIGHTBRACKET)? variable_affectation) 
+| call_instruction
+
+variable_declaration ::= T_DECLR T_VARIABLE T_IDENTIFIER 
+(T_LEFTBRACKET expression T_RIGHTBRACKET)? variable_end
+
+function_declaration ::= T_FUNCTION T_IDENTIFIER T_LEFTPARENTHESIS 
+(T_DECLR variable_declaration)* (T_RIGHTPARENTHESIS | T_END) bloc_instructions
+
+class_declaration ::= T_CLASS T_IDENTIFIER bloc_classe
+
+expression ::= term ((T_ADD | T_SUB | T_INF | T_INFEQUAL | T_SUP | T_SUPEQUAL) term)?
+
+term ::= factor ((T_MUL | T_DIV) factor)?
+
+factor ::= (T_NUMBER | T_STRING | T_VARIABLE | T_IDENTIFIER | 
+(T_LEFTPARENTHESIS expression T_RIGHTPARENTHESIS)
+
+bloc_instructions ::=  T_LEFTBRACE (for_instruction | if_instruction | system_instruction
+| readpol_instruction | include_instruction | print_instruction | fputs_instruction
+| cfg_dot_instruction | cfg_compute_instruction | ast_dot_instruction | return_instruction
+| call_instruction | variable | variable_declaration)* (T_RIGHTBRACE | T_END)
+
+variable_affectation ::= T_EQUAL (T_NEW classe_instance | expression)? variable_end 
+
+variable_end ::=  T_RIGHTPARENTHESIS | T_DOTCOMMA
+
+bloc_classe ::= T_LEFTBRACE (function_declaration | variable_declaration | variable)* 
+(T_END | T_RIGHTBRACE)
+
+classe_instance ::= T_IDENTIFIER
+
+\end{verbatim}
+
+\appendix
+
+% \listoffigures
+% \listoftables
+
+\end{document}

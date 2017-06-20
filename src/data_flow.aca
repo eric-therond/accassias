@@ -1,0 +1,11 @@
+class data_flow
+{
+  function get_flows()
+  {
+    $stdlib->system("data_flow_get_flows");
+  }
+}
+
+declr $data_flow;
+$data_flow = new data_flow;
+

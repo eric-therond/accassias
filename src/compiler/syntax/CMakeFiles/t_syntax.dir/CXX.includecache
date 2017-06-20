@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/eric/perso/accassias/src/compiler/syntax/t_identifier.cpp
+t_identifier.h
+/home/eric/perso/accassias/src/compiler/syntax/t_identifier.h
+
+/home/eric/perso/accassias/src/compiler/syntax/t_identifier.h
+t_symbol.h
+/home/eric/perso/accassias/src/compiler/syntax/t_symbol.h
+string
+-
+stack
+-
+
+/home/eric/perso/accassias/src/compiler/syntax/t_symbol.h
+ostream
+-
+string
+-
+

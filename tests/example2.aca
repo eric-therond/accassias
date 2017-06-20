@@ -1,0 +1,29 @@
+declr $a;
+declr $stdlib;
+declr $poly;
+
+$stdlib = new stdlib;
+$poly = new poly;
+$poly->readpol("3*X^3 + 2*X^2 + 1*X^1");
+
+$stdlib->print("EEEE");
+$stdlib->print($poly->degree);
+
+if(1 > 2)
+{
+  if(3 > 4)
+  {
+    $stdlib->print(66666666);
+  }
+  else
+  {
+    $stdlib->print(77777777);
+  }	
+}
+else
+{
+  $stdlib->print(888888888);	
+}
+
+$stdlib->print(999999999);
+

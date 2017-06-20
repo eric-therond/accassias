@@ -1,0 +1,18 @@
+declr $a;
+declr $b;
+declr $c;
+declr $d;
+
+$a = 100;
+
+$a = $b;
+
+$stdlib->print($a);
+$stdlib->print($b);
+
+$a = 222;
+
+$stdlib->print($a);
+$stdlib->print($b);
+
+

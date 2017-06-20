@@ -1,0 +1,10 @@
+class ast
+{
+  function dot(declr $file)
+  {
+    t_ast_dot
+  }
+}
+
+declr $ast;
+$ast = new ast;

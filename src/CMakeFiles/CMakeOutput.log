@@ -1,0 +1,233 @@
+The system is: Linux - 3.7.10-1.16-default - i686
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/eric/perso/accassias/src/CMakeFiles/2.8.10.2/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/home/eric/perso/accassias/src/CMakeFiles/2.8.10.2/CompilerIdCXX/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /home/eric/perso/accassias/src/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec9987316/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec9987316.dir/build.make CMakeFiles/cmTryCompileExec9987316.dir/build
+gmake[1] : on entre dans le répertoire « /home/eric/perso/accassias/src/CMakeFiles/CMakeTmp »
+/usr/bin/cmake -E cmake_progress_report /home/eric/perso/accassias/src/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec9987316.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec9987316.dir/testCCompiler.c.o   -c /home/eric/perso/accassias/src/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTryCompileExec9987316
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec9987316.dir/link.txt --verbose=1
+/usr/bin/cc         CMakeFiles/cmTryCompileExec9987316.dir/testCCompiler.c.o  -o cmTryCompileExec9987316 -rdynamic 
+gmake[1] : on quitte le répertoire « /home/eric/perso/accassias/src/CMakeFiles/CMakeTmp »
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/eric/perso/accassias/src/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec1544817364/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec1544817364.dir/build.make CMakeFiles/cmTryCompileExec1544817364.dir/build
+gmake[1] : on entre dans le répertoire « /home/eric/perso/accassias/src/CMakeFiles/CMakeTmp »
+/usr/bin/cmake -E cmake_progress_report /home/eric/perso/accassias/src/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1544817364.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1544817364.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+Linking C executable cmTryCompileExec1544817364
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1544817364.dir/link.txt --verbose=1
+/usr/bin/cc       -v CMakeFiles/cmTryCompileExec1544817364.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec1544817364 -rdynamic  
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/i586-suse-linux/4.7/lto-wrapper
+Target: i586-suse-linux
+Configured with: ../configure --prefix=/usr --infodir=/usr/share/info --mandir=/usr/share/man --libdir=/usr/lib --libexecdir=/usr/lib --enable-languages=c,c++,objc,fortran,obj-c++,java,ada --enable-checking=release --with-gxx-include-dir=/usr/include/c++/4.7 --enable-ssp --disable-libssp --disable-libitm --disable-plugin --with-bugurl=http://bugs.opensuse.org/ --with-pkgversion='SUSE Linux' --disable-libgcj --disable-libmudflap --with-slibdir=/lib --with-system-zlib --enable-__cxa_atexit --enable-libstdcxx-allocator=new --disable-libstdcxx-pch --enable-version-specific-runtime-libs --enable-linker-build-id --program-suffix=-4.7 --enable-linux-futex --without-system-libunwind --with-arch-32=i586 --with-tune=generic --build=i586-suse-linux
+  Thread model: posix
+gcc version 4.7.2 20130108 [gcc-4_7-branch revision 195012] (SUSE Linux) 
+  COMPILER_PATH=/usr/lib/gcc/i586-suse-linux/4.7/:/usr/lib/gcc/i586-suse-linux/4.7/:/usr/lib/gcc/i586-suse-linux/:/usr/lib/gcc/i586-suse-linux/4.7/:/usr/lib/gcc/i586-suse-linux/:/usr/lib/gcc/i586-suse-linux/4.7/../../../../i586-suse-linux/bin/
+  LIBRARY_PATH=/usr/lib/gcc/i586-suse-linux/4.7/:/usr/lib/gcc/i586-suse-linux/4.7/../../../../i586-suse-linux/lib/:/usr/lib/gcc/i586-suse-linux/4.7/../../../:/lib/:/usr/lib/
+  COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec1544817364' '-rdynamic' '-mtune=generic' '-march=i586'
+  /usr/lib/gcc/i586-suse-linux/4.7/collect2 --build-id --eh-frame-hdr -m elf_i386 -export-dynamic -dynamic-linker /lib/ld-linux.so.2 -o cmTryCompileExec1544817364 /usr/lib/gcc/i586-suse-linux/4.7/../../../crt1.o /usr/lib/gcc/i586-suse-linux/4.7/../../../crti.o /usr/lib/gcc/i586-suse-linux/4.7/crtbegin.o -L/usr/lib/gcc/i586-suse-linux/4.7 -L/usr/lib/gcc/i586-suse-linux/4.7/../../../../i586-suse-linux/lib -L/usr/lib/gcc/i586-suse-linux/4.7/../../.. CMakeFiles/cmTryCompileExec1544817364.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/i586-suse-linux/4.7/crtend.o /usr/lib/gcc/i586-suse-linux/4.7/../../../crtn.o
+  gmake[1] : on quitte le répertoire « /home/eric/perso/accassias/src/CMakeFiles/CMakeTmp »
+
+
+  Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/eric/perso/accassias/src/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:/usr/bin/gmake "cmTryCompileExec1544817364/fast"]
+  ignore line: [/usr/bin/gmake -f CMakeFiles/cmTryCompileExec1544817364.dir/build.make CMakeFiles/cmTryCompileExec1544817364.dir/build]
+  ignore line: [gmake[1] : on entre dans le répertoire « /home/eric/perso/accassias/src/CMakeFiles/CMakeTmp »]
+  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/eric/perso/accassias/src/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building C object CMakeFiles/cmTryCompileExec1544817364.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1544817364.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTryCompileExec1544817364]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1544817364.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc       -v CMakeFiles/cmTryCompileExec1544817364.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec1544817364 -rdynamic  ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/i586-suse-linux/4.7/lto-wrapper]
+  ignore line: [Target: i586-suse-linux]
+  ignore line: [Configured with: ../configure --prefix=/usr --infodir=/usr/share/info --mandir=/usr/share/man --libdir=/usr/lib --libexecdir=/usr/lib --enable-languages=c,c++,objc,fortran,obj-c++,java,ada --enable-checking=release --with-gxx-include-dir=/usr/include/c++/4.7 --enable-ssp --disable-libssp --disable-libitm --disable-plugin --with-bugurl=http://bugs.opensuse.org/ --with-pkgversion='SUSE Linux' --disable-libgcj --disable-libmudflap --with-slibdir=/lib --with-system-zlib --enable-__cxa_atexit --enable-libstdcxx-allocator=new --disable-libstdcxx-pch --enable-version-specific-runtime-libs --enable-linker-build-id --program-suffix=-4.7 --enable-linux-futex --without-system-libunwind --with-arch-32=i586 --with-tune=generic --build=i586-suse-linux]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 4.7.2 20130108 [gcc-4_7-branch revision 195012] (SUSE Linux) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/i586-suse-linux/4.7/:/usr/lib/gcc/i586-suse-linux/4.7/:/usr/lib/gcc/i586-suse-linux/:/usr/lib/gcc/i586-suse-linux/4.7/:/usr/lib/gcc/i586-suse-linux/:/usr/lib/gcc/i586-suse-linux/4.7/../../../../i586-suse-linux/bin/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/i586-suse-linux/4.7/:/usr/lib/gcc/i586-suse-linux/4.7/../../../../i586-suse-linux/lib/:/usr/lib/gcc/i586-suse-linux/4.7/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec1544817364' '-rdynamic' '-mtune=generic' '-march=i586']
+  link line: [ /usr/lib/gcc/i586-suse-linux/4.7/collect2 --build-id --eh-frame-hdr -m elf_i386 -export-dynamic -dynamic-linker /lib/ld-linux.so.2 -o cmTryCompileExec1544817364 /usr/lib/gcc/i586-suse-linux/4.7/../../../crt1.o /usr/lib/gcc/i586-suse-linux/4.7/../../../crti.o /usr/lib/gcc/i586-suse-linux/4.7/crtbegin.o -L/usr/lib/gcc/i586-suse-linux/4.7 -L/usr/lib/gcc/i586-suse-linux/4.7/../../../../i586-suse-linux/lib -L/usr/lib/gcc/i586-suse-linux/4.7/../../.. CMakeFiles/cmTryCompileExec1544817364.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/i586-suse-linux/4.7/crtend.o /usr/lib/gcc/i586-suse-linux/4.7/../../../crtn.o]
+  arg [/usr/lib/gcc/i586-suse-linux/4.7/collect2] ==> ignore
+  arg [--build-id] ==> ignore
+  arg [--eh-frame-hdr] ==> ignore
+  arg [-m] ==> ignore
+  arg [elf_i386] ==> ignore
+  arg [-export-dynamic] ==> ignore
+  arg [-dynamic-linker] ==> ignore
+  arg [/lib/ld-linux.so.2] ==> ignore
+  arg [-o] ==> ignore
+  arg [cmTryCompileExec1544817364] ==> ignore
+  arg [/usr/lib/gcc/i586-suse-linux/4.7/../../../crt1.o] ==> ignore
+  arg [/usr/lib/gcc/i586-suse-linux/4.7/../../../crti.o] ==> ignore
+  arg [/usr/lib/gcc/i586-suse-linux/4.7/crtbegin.o] ==> ignore
+  arg [-L/usr/lib/gcc/i586-suse-linux/4.7] ==> dir [/usr/lib/gcc/i586-suse-linux/4.7]
+  arg [-L/usr/lib/gcc/i586-suse-linux/4.7/../../../../i586-suse-linux/lib] ==> dir [/usr/lib/gcc/i586-suse-linux/4.7/../../../../i586-suse-linux/lib]
+  arg [-L/usr/lib/gcc/i586-suse-linux/4.7/../../..] ==> dir [/usr/lib/gcc/i586-suse-linux/4.7/../../..]
+  arg [CMakeFiles/cmTryCompileExec1544817364.dir/CMakeCCompilerABI.c.o] ==> ignore
+  arg [-lgcc] ==> lib [gcc]
+  arg [--as-needed] ==> ignore
+  arg [-lgcc_s] ==> lib [gcc_s]
+  arg [--no-as-needed] ==> ignore
+  arg [-lc] ==> lib [c]
+  arg [-lgcc] ==> lib [gcc]
+  arg [--as-needed] ==> ignore
+  arg [-lgcc_s] ==> lib [gcc_s]
+  arg [--no-as-needed] ==> ignore
+  arg [/usr/lib/gcc/i586-suse-linux/4.7/crtend.o] ==> ignore
+  arg [/usr/lib/gcc/i586-suse-linux/4.7/../../../crtn.o] ==> ignore
+  remove lib [gcc]
+  remove lib [gcc_s]
+  remove lib [gcc]
+  remove lib [gcc_s]
+  collapse dir [/usr/lib/gcc/i586-suse-linux/4.7] ==> [/usr/lib/gcc/i586-suse-linux/4.7]
+  collapse dir [/usr/lib/gcc/i586-suse-linux/4.7/../../../../i586-suse-linux/lib] ==> [/usr/i586-suse-linux/lib]
+  collapse dir [/usr/lib/gcc/i586-suse-linux/4.7/../../..] ==> [/usr/lib]
+  implicit libs: [c]
+  implicit dirs: [/usr/lib/gcc/i586-suse-linux/4.7;/usr/i586-suse-linux/lib;/usr/lib]
+
+
+  Determining if the CXX compiler works passed with the following output:
+  Change Dir: /home/eric/perso/accassias/src/CMakeFiles/CMakeTmp
+
+  Run Build Command:/usr/bin/gmake "cmTryCompileExec3064999696/fast"
+  /usr/bin/gmake -f CMakeFiles/cmTryCompileExec3064999696.dir/build.make CMakeFiles/cmTryCompileExec3064999696.dir/build
+  gmake[1] : on entre dans le répertoire « /home/eric/perso/accassias/src/CMakeFiles/CMakeTmp »
+  /usr/bin/cmake -E cmake_progress_report /home/eric/perso/accassias/src/CMakeFiles/CMakeTmp/CMakeFiles 1
+  Building CXX object CMakeFiles/cmTryCompileExec3064999696.dir/testCXXCompiler.cxx.o
+  /usr/bin/c++     -o CMakeFiles/cmTryCompileExec3064999696.dir/testCXXCompiler.cxx.o -c /home/eric/perso/accassias/src/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+  Linking CXX executable cmTryCompileExec3064999696
+  /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3064999696.dir/link.txt --verbose=1
+  /usr/bin/c++          CMakeFiles/cmTryCompileExec3064999696.dir/testCXXCompiler.cxx.o  -o cmTryCompileExec3064999696 -rdynamic 
+  gmake[1] : on quitte le répertoire « /home/eric/perso/accassias/src/CMakeFiles/CMakeTmp »
+
+
+  Detecting CXX compiler ABI info compiled with the following output:
+  Change Dir: /home/eric/perso/accassias/src/CMakeFiles/CMakeTmp
+
+  Run Build Command:/usr/bin/gmake "cmTryCompileExec3697174667/fast"
+  /usr/bin/gmake -f CMakeFiles/cmTryCompileExec3697174667.dir/build.make CMakeFiles/cmTryCompileExec3697174667.dir/build
+  gmake[1] : on entre dans le répertoire « /home/eric/perso/accassias/src/CMakeFiles/CMakeTmp »
+  /usr/bin/cmake -E cmake_progress_report /home/eric/perso/accassias/src/CMakeFiles/CMakeTmp/CMakeFiles 1
+  Building CXX object CMakeFiles/cmTryCompileExec3697174667.dir/CMakeCXXCompilerABI.cpp.o
+  /usr/bin/c++     -o CMakeFiles/cmTryCompileExec3697174667.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+  Linking CXX executable cmTryCompileExec3697174667
+  /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3697174667.dir/link.txt --verbose=1
+  /usr/bin/c++        -v CMakeFiles/cmTryCompileExec3697174667.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec3697174667 -rdynamic  
+  Using built-in specs.
+  COLLECT_GCC=/usr/bin/c++
+  COLLECT_LTO_WRAPPER=/usr/lib/gcc/i586-suse-linux/4.7/lto-wrapper
+  Target: i586-suse-linux
+  Configured with: ../configure --prefix=/usr --infodir=/usr/share/info --mandir=/usr/share/man --libdir=/usr/lib --libexecdir=/usr/lib --enable-languages=c,c++,objc,fortran,obj-c++,java,ada --enable-checking=release --with-gxx-include-dir=/usr/include/c++/4.7 --enable-ssp --disable-libssp --disable-libitm --disable-plugin --with-bugurl=http://bugs.opensuse.org/ --with-pkgversion='SUSE Linux' --disable-libgcj --disable-libmudflap --with-slibdir=/lib --with-system-zlib --enable-__cxa_atexit --enable-libstdcxx-allocator=new --disable-libstdcxx-pch --enable-version-specific-runtime-libs --enable-linker-build-id --program-suffix=-4.7 --enable-linux-futex --without-system-libunwind --with-arch-32=i586 --with-tune=generic --build=i586-suse-linux
+  Thread model: posix
+gcc version 4.7.2 20130108 [gcc-4_7-branch revision 195012] (SUSE Linux) 
+  COMPILER_PATH=/usr/lib/gcc/i586-suse-linux/4.7/:/usr/lib/gcc/i586-suse-linux/4.7/:/usr/lib/gcc/i586-suse-linux/:/usr/lib/gcc/i586-suse-linux/4.7/:/usr/lib/gcc/i586-suse-linux/:/usr/lib/gcc/i586-suse-linux/4.7/../../../../i586-suse-linux/bin/
+  LIBRARY_PATH=/usr/lib/gcc/i586-suse-linux/4.7/:/usr/lib/gcc/i586-suse-linux/4.7/../../../../i586-suse-linux/lib/:/usr/lib/gcc/i586-suse-linux/4.7/../../../:/lib/:/usr/lib/
+  COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec3697174667' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=i586'
+  /usr/lib/gcc/i586-suse-linux/4.7/collect2 --build-id --eh-frame-hdr -m elf_i386 -export-dynamic -dynamic-linker /lib/ld-linux.so.2 -o cmTryCompileExec3697174667 /usr/lib/gcc/i586-suse-linux/4.7/../../../crt1.o /usr/lib/gcc/i586-suse-linux/4.7/../../../crti.o /usr/lib/gcc/i586-suse-linux/4.7/crtbegin.o -L/usr/lib/gcc/i586-suse-linux/4.7 -L/usr/lib/gcc/i586-suse-linux/4.7/../../../../i586-suse-linux/lib -L/usr/lib/gcc/i586-suse-linux/4.7/../../.. CMakeFiles/cmTryCompileExec3697174667.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/i586-suse-linux/4.7/crtend.o /usr/lib/gcc/i586-suse-linux/4.7/../../../crtn.o
+  gmake[1] : on quitte le répertoire « /home/eric/perso/accassias/src/CMakeFiles/CMakeTmp »
+
+
+  Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/eric/perso/accassias/src/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:/usr/bin/gmake "cmTryCompileExec3697174667/fast"]
+  ignore line: [/usr/bin/gmake -f CMakeFiles/cmTryCompileExec3697174667.dir/build.make CMakeFiles/cmTryCompileExec3697174667.dir/build]
+  ignore line: [gmake[1] : on entre dans le répertoire « /home/eric/perso/accassias/src/CMakeFiles/CMakeTmp »]
+  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/eric/perso/accassias/src/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec3697174667.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTryCompileExec3697174667.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTryCompileExec3697174667]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3697174667.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++        -v CMakeFiles/cmTryCompileExec3697174667.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec3697174667 -rdynamic  ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/c++]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/i586-suse-linux/4.7/lto-wrapper]
+  ignore line: [Target: i586-suse-linux]
+  ignore line: [Configured with: ../configure --prefix=/usr --infodir=/usr/share/info --mandir=/usr/share/man --libdir=/usr/lib --libexecdir=/usr/lib --enable-languages=c,c++,objc,fortran,obj-c++,java,ada --enable-checking=release --with-gxx-include-dir=/usr/include/c++/4.7 --enable-ssp --disable-libssp --disable-libitm --disable-plugin --with-bugurl=http://bugs.opensuse.org/ --with-pkgversion='SUSE Linux' --disable-libgcj --disable-libmudflap --with-slibdir=/lib --with-system-zlib --enable-__cxa_atexit --enable-libstdcxx-allocator=new --disable-libstdcxx-pch --enable-version-specific-runtime-libs --enable-linker-build-id --program-suffix=-4.7 --enable-linux-futex --without-system-libunwind --with-arch-32=i586 --with-tune=generic --build=i586-suse-linux]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 4.7.2 20130108 [gcc-4_7-branch revision 195012] (SUSE Linux) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/i586-suse-linux/4.7/:/usr/lib/gcc/i586-suse-linux/4.7/:/usr/lib/gcc/i586-suse-linux/:/usr/lib/gcc/i586-suse-linux/4.7/:/usr/lib/gcc/i586-suse-linux/:/usr/lib/gcc/i586-suse-linux/4.7/../../../../i586-suse-linux/bin/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/i586-suse-linux/4.7/:/usr/lib/gcc/i586-suse-linux/4.7/../../../../i586-suse-linux/lib/:/usr/lib/gcc/i586-suse-linux/4.7/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec3697174667' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=i586']
+  link line: [ /usr/lib/gcc/i586-suse-linux/4.7/collect2 --build-id --eh-frame-hdr -m elf_i386 -export-dynamic -dynamic-linker /lib/ld-linux.so.2 -o cmTryCompileExec3697174667 /usr/lib/gcc/i586-suse-linux/4.7/../../../crt1.o /usr/lib/gcc/i586-suse-linux/4.7/../../../crti.o /usr/lib/gcc/i586-suse-linux/4.7/crtbegin.o -L/usr/lib/gcc/i586-suse-linux/4.7 -L/usr/lib/gcc/i586-suse-linux/4.7/../../../../i586-suse-linux/lib -L/usr/lib/gcc/i586-suse-linux/4.7/../../.. CMakeFiles/cmTryCompileExec3697174667.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/i586-suse-linux/4.7/crtend.o /usr/lib/gcc/i586-suse-linux/4.7/../../../crtn.o]
+  arg [/usr/lib/gcc/i586-suse-linux/4.7/collect2] ==> ignore
+  arg [--build-id] ==> ignore
+  arg [--eh-frame-hdr] ==> ignore
+  arg [-m] ==> ignore
+  arg [elf_i386] ==> ignore
+  arg [-export-dynamic] ==> ignore
+  arg [-dynamic-linker] ==> ignore
+  arg [/lib/ld-linux.so.2] ==> ignore
+  arg [-o] ==> ignore
+  arg [cmTryCompileExec3697174667] ==> ignore
+  arg [/usr/lib/gcc/i586-suse-linux/4.7/../../../crt1.o] ==> ignore
+  arg [/usr/lib/gcc/i586-suse-linux/4.7/../../../crti.o] ==> ignore
+  arg [/usr/lib/gcc/i586-suse-linux/4.7/crtbegin.o] ==> ignore
+  arg [-L/usr/lib/gcc/i586-suse-linux/4.7] ==> dir [/usr/lib/gcc/i586-suse-linux/4.7]
+  arg [-L/usr/lib/gcc/i586-suse-linux/4.7/../../../../i586-suse-linux/lib] ==> dir [/usr/lib/gcc/i586-suse-linux/4.7/../../../../i586-suse-linux/lib]
+  arg [-L/usr/lib/gcc/i586-suse-linux/4.7/../../..] ==> dir [/usr/lib/gcc/i586-suse-linux/4.7/../../..]
+  arg [CMakeFiles/cmTryCompileExec3697174667.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+  arg [-lstdc++] ==> lib [stdc++]
+  arg [-lm] ==> lib [m]
+  arg [-lgcc_s] ==> lib [gcc_s]
+  arg [-lgcc] ==> lib [gcc]
+  arg [-lc] ==> lib [c]
+  arg [-lgcc_s] ==> lib [gcc_s]
+  arg [-lgcc] ==> lib [gcc]
+  arg [/usr/lib/gcc/i586-suse-linux/4.7/crtend.o] ==> ignore
+  arg [/usr/lib/gcc/i586-suse-linux/4.7/../../../crtn.o] ==> ignore
+  remove lib [gcc_s]
+  remove lib [gcc]
+  remove lib [gcc_s]
+  remove lib [gcc]
+  collapse dir [/usr/lib/gcc/i586-suse-linux/4.7] ==> [/usr/lib/gcc/i586-suse-linux/4.7]
+  collapse dir [/usr/lib/gcc/i586-suse-linux/4.7/../../../../i586-suse-linux/lib] ==> [/usr/i586-suse-linux/lib]
+  collapse dir [/usr/lib/gcc/i586-suse-linux/4.7/../../..] ==> [/usr/lib]
+  implicit libs: [stdc++;m;c]
+  implicit dirs: [/usr/lib/gcc/i586-suse-linux/4.7;/usr/i586-suse-linux/lib;/usr/lib]
+
+

@@ -1,0 +1,2 @@
+/usr/bin/ar cr libt_console.a  CMakeFiles/t_console.dir/t_time.cpp.o CMakeFiles/t_console.dir/t_print.cpp.o CMakeFiles/t_console.dir/t_console.cpp.o
+/usr/bin/ranlib libt_console.a
